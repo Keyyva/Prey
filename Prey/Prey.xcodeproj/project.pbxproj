@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FF08411920765BB3007F87DE /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08411820765BB3007F87DE /* GameObject.swift */; };
+		FF225698207898B2001D9850 /* ObstacleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF225697207898B2001D9850 /* ObstacleBase.swift */; };
+		FF22569A207898D1001D9850 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF225699207898D1001D9850 /* Obstacle.swift */; };
+		FF22569C207898E9001D9850 /* ObstacleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22569B207898E9001D9850 /* ObstacleFactory.swift */; };
 		FF961AB920771E05005653C4 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF961AB820771E05005653C4 /* GlobalValues.swift */; };
 		FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */; };
 		FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD6207566C300AB5A13 /* GameScene.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		FF08411820765BB3007F87DE /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		FF225697207898B2001D9850 /* ObstacleBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleBase.swift; sourceTree = "<group>"; };
+		FF225699207898D1001D9850 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		FF22569B207898E9001D9850 /* ObstacleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleFactory.swift; sourceTree = "<group>"; };
 		FF961AB820771E05005653C4 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
 		FFA4ADCD207566C300AB5A13 /* Prey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				FFA4ADE2207566C300AB5A13 /* Info.plist */,
 				FF08411820765BB3007F87DE /* GameObject.swift */,
 				FF961AB820771E05005653C4 /* GlobalValues.swift */,
+				FF225697207898B2001D9850 /* ObstacleBase.swift */,
+				FF225699207898D1001D9850 /* Obstacle.swift */,
+				FF22569B207898E9001D9850 /* ObstacleFactory.swift */,
 			);
 			path = Prey;
 			sourceTree = "<group>";
@@ -268,9 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF22569A207898D1001D9850 /* Obstacle.swift in Sources */,
 				FF08411920765BB3007F87DE /* GameObject.swift in Sources */,
+				FF225698207898B2001D9850 /* ObstacleBase.swift in Sources */,
 				FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */,
 				FFA4ADD9207566C300AB5A13 /* GameViewController.swift in Sources */,
+				FF22569C207898E9001D9850 /* ObstacleFactory.swift in Sources */,
 				FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */,
 				FF961AB920771E05005653C4 /* GlobalValues.swift in Sources */,
 			);

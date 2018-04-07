@@ -14,4 +14,7 @@ public struct GlobalValues {
     static let numOfObstacles = 5               // Total number of obstacles
     static let avgSpaceBetweenObstacles = 50    // The average space between the obstacles on the x axis
     static let obstacleMaxPosRandomize = 30     // The maximum amount allowed for randomizing obstacles - obstacles wont move more than obstacleMaxPosRandomize away from avgSpaceBetweenObstacles
+    
+    static let rockImageName = "Rock"
+    static let logImageName = "Log"
 }
