@@ -11,6 +11,8 @@
 		FF225698207898B2001D9850 /* ObstacleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF225697207898B2001D9850 /* ObstacleBase.swift */; };
 		FF22569A207898D1001D9850 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF225699207898D1001D9850 /* Obstacle.swift */; };
 		FF22569C207898E9001D9850 /* ObstacleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22569B207898E9001D9850 /* ObstacleFactory.swift */; };
+		FF22569E20789D0D001D9850 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22569D20789D0D001D9850 /* ParallaxSprite.swift */; };
+		FF2256A020789D20001D9850 /* ParallaxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22569F20789D20001D9850 /* ParallaxController.swift */; };
 		FF961AB920771E05005653C4 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF961AB820771E05005653C4 /* GlobalValues.swift */; };
 		FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */; };
 		FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD6207566C300AB5A13 /* GameScene.swift */; };
@@ -44,6 +46,8 @@
 		FF225697207898B2001D9850 /* ObstacleBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleBase.swift; sourceTree = "<group>"; };
 		FF225699207898D1001D9850 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
 		FF22569B207898E9001D9850 /* ObstacleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObstacleFactory.swift; sourceTree = "<group>"; };
+		FF22569D20789D0D001D9850 /* ParallaxSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxSprite.swift; sourceTree = "<group>"; };
+		FF22569F20789D20001D9850 /* ParallaxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxController.swift; sourceTree = "<group>"; };
 		FF961AB820771E05005653C4 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
 		FFA4ADCD207566C300AB5A13 /* Prey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				FF225697207898B2001D9850 /* ObstacleBase.swift */,
 				FF225699207898D1001D9850 /* Obstacle.swift */,
 				FF22569B207898E9001D9850 /* ObstacleFactory.swift */,
+				FF22569D20789D0D001D9850 /* ParallaxSprite.swift */,
+				FF22569F20789D20001D9850 /* ParallaxController.swift */,
 			);
 			path = Prey;
 			sourceTree = "<group>";
@@ -279,8 +285,10 @@
 			files = (
 				FF22569A207898D1001D9850 /* Obstacle.swift in Sources */,
 				FF08411920765BB3007F87DE /* GameObject.swift in Sources */,
+				FF2256A020789D20001D9850 /* ParallaxController.swift in Sources */,
 				FF225698207898B2001D9850 /* ObstacleBase.swift in Sources */,
 				FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */,
+				FF22569E20789D0D001D9850 /* ParallaxSprite.swift in Sources */,
 				FFA4ADD9207566C300AB5A13 /* GameViewController.swift in Sources */,
 				FF22569C207898E9001D9850 /* ObstacleFactory.swift in Sources */,
 				FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */,

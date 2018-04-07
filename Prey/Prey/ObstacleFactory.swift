@@ -11,7 +11,7 @@ import Foundation
 import SpriteKit
 
 class ObstacleFactory {
-    var obstacles: [Obstacle] = []
+    var obstacles: [GameObject] = []
     
     // Populates the obstacles array
     //
@@ -28,7 +28,7 @@ class ObstacleFactory {
     // Returns the obstacle that is closest ahead of the player
     //
     // - Parameter
-    public func getObstacle(player: GameObject) -> Obstacle {
+    public func getObstacle(player: GameObject) -> GameObject {
         var result = obstacles[0]
         
         for obstacle in obstacles {
@@ -38,7 +38,16 @@ class ObstacleFactory {
                 }
             }
         }
-        
         return result
+    }
+    
+    // Update - runs once every frame. Calls the update function in each Obstacle
+    //
+    // - Parameter deltaTime: the amount of time between each frame
+    func update(_ deltaTime: TimeInterval){
+        // Update all obstacles
+        for obstacle in obstacles{
+            obstacle.update(deltaTime)
+        }
     }
 }
