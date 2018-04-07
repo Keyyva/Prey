@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF08411920765BB3007F87DE /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF08411820765BB3007F87DE /* GameObject.swift */; };
+		FF961AB920771E05005653C4 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF961AB820771E05005653C4 /* GlobalValues.swift */; };
+		FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */; };
+		FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD6207566C300AB5A13 /* GameScene.swift */; };
+		FFA4ADD9207566C300AB5A13 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD8207566C300AB5A13 /* GameViewController.swift */; };
+		FFA4ADDC207566C300AB5A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA4ADDA207566C300AB5A13 /* Main.storyboard */; };
+		FFA4ADDE207566C300AB5A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA4ADDD207566C300AB5A13 /* Assets.xcassets */; };
+		FFA4ADE1207566C300AB5A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA4ADDF207566C300AB5A13 /* LaunchScreen.storyboard */; };
+		FFA4ADEC207566C300AB5A13 /* PreyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADEB207566C300AB5A13 /* PreyTests.swift */; };
+		FFA4ADF7207566C300AB5A13 /* PreyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADF6207566C300AB5A13 /* PreyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFA4ADE8207566C300AB5A13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA4ADC5207566C300AB5A13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA4ADCC207566C300AB5A13;
+			remoteInfo = Prey;
+		};
+		FFA4ADF3207566C300AB5A13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFA4ADC5207566C300AB5A13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFA4ADCC207566C300AB5A13;
+			remoteInfo = Prey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF08411820765BB3007F87DE /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		FF961AB820771E05005653C4 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
+		FFA4ADCD207566C300AB5A13 /* Prey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFA4ADD6207566C300AB5A13 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FFA4ADD8207566C300AB5A13 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FFA4ADDB207566C300AB5A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFA4ADDD207566C300AB5A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA4ADE0207566C300AB5A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFA4ADE2207566C300AB5A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA4ADE7207566C300AB5A13 /* PreyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA4ADEB207566C300AB5A13 /* PreyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreyTests.swift; sourceTree = "<group>"; };
+		FFA4ADED207566C300AB5A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA4ADF2207566C300AB5A13 /* PreyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA4ADF6207566C300AB5A13 /* PreyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreyUITests.swift; sourceTree = "<group>"; };
+		FFA4ADF8207566C300AB5A13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFA4ADCA207566C300AB5A13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA4ADE4207566C300AB5A13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA4ADEF207566C300AB5A13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFA4ADC4207566C300AB5A13 = {
+			isa = PBXGroup;
+			children = (
+				FFA4ADCF207566C300AB5A13 /* Prey */,
+				FFA4ADEA207566C300AB5A13 /* PreyTests */,
+				FFA4ADF5207566C300AB5A13 /* PreyUITests */,
+				FFA4ADCE207566C300AB5A13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFA4ADCE207566C300AB5A13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4ADCD207566C300AB5A13 /* Prey.app */,
+				FFA4ADE7207566C300AB5A13 /* PreyTests.xctest */,
+				FFA4ADF2207566C300AB5A13 /* PreyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFA4ADCF207566C300AB5A13 /* Prey */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */,
+				FFA4ADD6207566C300AB5A13 /* GameScene.swift */,
+				FFA4ADD8207566C300AB5A13 /* GameViewController.swift */,
+				FFA4ADDA207566C300AB5A13 /* Main.storyboard */,
+				FFA4ADDD207566C300AB5A13 /* Assets.xcassets */,
+				FFA4ADDF207566C300AB5A13 /* LaunchScreen.storyboard */,
+				FFA4ADE2207566C300AB5A13 /* Info.plist */,
+				FF08411820765BB3007F87DE /* GameObject.swift */,
+				FF961AB820771E05005653C4 /* GlobalValues.swift */,
+			);
+			path = Prey;
+			sourceTree = "<group>";
+		};
+		FFA4ADEA207566C300AB5A13 /* PreyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4ADEB207566C300AB5A13 /* PreyTests.swift */,
+				FFA4ADED207566C300AB5A13 /* Info.plist */,
+			);
+			path = PreyTests;
+			sourceTree = "<group>";
+		};
+		FFA4ADF5207566C300AB5A13 /* PreyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4ADF6207566C300AB5A13 /* PreyUITests.swift */,
+				FFA4ADF8207566C300AB5A13 /* Info.plist */,
+			);
+			path = PreyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFA4ADCC207566C300AB5A13 /* Prey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA4ADFB207566C300AB5A13 /* Build configuration list for PBXNativeTarget "Prey" */;
+			buildPhases = (
+				FFA4ADC9207566C300AB5A13 /* Sources */,
+				FFA4ADCA207566C300AB5A13 /* Frameworks */,
+				FFA4ADCB207566C300AB5A13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prey;
+			productName = Prey;
+			productReference = FFA4ADCD207566C300AB5A13 /* Prey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFA4ADE6207566C300AB5A13 /* PreyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA4ADFE207566C300AB5A13 /* Build configuration list for PBXNativeTarget "PreyTests" */;
+			buildPhases = (
+				FFA4ADE3207566C300AB5A13 /* Sources */,
+				FFA4ADE4207566C300AB5A13 /* Frameworks */,
+				FFA4ADE5207566C300AB5A13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA4ADE9207566C300AB5A13 /* PBXTargetDependency */,
+			);
+			name = PreyTests;
+			productName = PreyTests;
+			productReference = FFA4ADE7207566C300AB5A13 /* PreyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFA4ADF1207566C300AB5A13 /* PreyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFA4AE01207566C300AB5A13 /* Build configuration list for PBXNativeTarget "PreyUITests" */;
+			buildPhases = (
+				FFA4ADEE207566C300AB5A13 /* Sources */,
+				FFA4ADEF207566C300AB5A13 /* Frameworks */,
+				FFA4ADF0207566C300AB5A13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFA4ADF4207566C300AB5A13 /* PBXTargetDependency */,
+			);
+			name = PreyUITests;
+			productName = PreyUITests;
+			productReference = FFA4ADF2207566C300AB5A13 /* PreyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFA4ADC5207566C300AB5A13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Keyyva Studio";
+				TargetAttributes = {
+					FFA4ADCC207566C300AB5A13 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FFA4ADE6207566C300AB5A13 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFA4ADCC207566C300AB5A13;
+					};
+					FFA4ADF1207566C300AB5A13 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFA4ADCC207566C300AB5A13;
+					};
+				};
+			};
+			buildConfigurationList = FFA4ADC8207566C300AB5A13 /* Build configuration list for PBXProject "Prey" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFA4ADC4207566C300AB5A13;
+			productRefGroup = FFA4ADCE207566C300AB5A13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFA4ADCC207566C300AB5A13 /* Prey */,
+				FFA4ADE6207566C300AB5A13 /* PreyTests */,
+				FFA4ADF1207566C300AB5A13 /* PreyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFA4ADCB207566C300AB5A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA4ADDC207566C300AB5A13 /* Main.storyboard in Resources */,
+				FFA4ADDE207566C300AB5A13 /* Assets.xcassets in Resources */,
+				FFA4ADE1207566C300AB5A13 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA4ADE5207566C300AB5A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA4ADF0207566C300AB5A13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFA4ADC9207566C300AB5A13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF08411920765BB3007F87DE /* GameObject.swift in Sources */,
+				FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */,
+				FFA4ADD9207566C300AB5A13 /* GameViewController.swift in Sources */,
+				FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */,
+				FF961AB920771E05005653C4 /* GlobalValues.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA4ADE3207566C300AB5A13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA4ADEC207566C300AB5A13 /* PreyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA4ADEE207566C300AB5A13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFA4ADF7207566C300AB5A13 /* PreyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFA4ADE9207566C300AB5A13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA4ADCC207566C300AB5A13 /* Prey */;
+			targetProxy = FFA4ADE8207566C300AB5A13 /* PBXContainerItemProxy */;
+		};
+		FFA4ADF4207566C300AB5A13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFA4ADCC207566C300AB5A13 /* Prey */;
+			targetProxy = FFA4ADF3207566C300AB5A13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFA4ADDA207566C300AB5A13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA4ADDB207566C300AB5A13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFA4ADDF207566C300AB5A13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFA4ADE0207566C300AB5A13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFA4ADF9207566C300AB5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFA4ADFA207566C300AB5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFA4ADFC207566C300AB5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Prey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyyva-Studio.Prey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFA4ADFD207566C300AB5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Prey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyyva-Studio.Prey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FFA4ADFF207566C300AB5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PreyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyyva-Studio.PreyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prey.app/Prey";
+			};
+			name = Debug;
+		};
+		FFA4AE00207566C300AB5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PreyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyyva-Studio.PreyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prey.app/Prey";
+			};
+			name = Release;
+		};
+		FFA4AE02207566C300AB5A13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PreyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyyva-Studio.PreyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prey;
+			};
+			name = Debug;
+		};
+		FFA4AE03207566C300AB5A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PreyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Keyyva-Studio.PreyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Prey;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFA4ADC8207566C300AB5A13 /* Build configuration list for PBXProject "Prey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA4ADF9207566C300AB5A13 /* Debug */,
+				FFA4ADFA207566C300AB5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA4ADFB207566C300AB5A13 /* Build configuration list for PBXNativeTarget "Prey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA4ADFC207566C300AB5A13 /* Debug */,
+				FFA4ADFD207566C300AB5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA4ADFE207566C300AB5A13 /* Build configuration list for PBXNativeTarget "PreyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA4ADFF207566C300AB5A13 /* Debug */,
+				FFA4AE00207566C300AB5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFA4AE01207566C300AB5A13 /* Build configuration list for PBXNativeTarget "PreyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFA4AE02207566C300AB5A13 /* Debug */,
+				FFA4AE03207566C300AB5A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFA4ADC5207566C300AB5A13 /* Project object */;
+}
