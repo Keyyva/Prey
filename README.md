@@ -5,6 +5,6 @@ Prey is a mobile 2D endless runner game. Targeted for all age groups, the game f
 
 **Read Prey-GDD.pdf for more info on the game.**
 
-Programmer by Neriah Benoit [Keyyva]
+Programmer by Neriah Benoit [Keyyva]<br />
 Artist by Headless Hen (https://twitter.com/ashtrayandcirce)
 
