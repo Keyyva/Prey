@@ -9,7 +9,27 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    fileprivate var lastUpdateTime: TimeInterval?
+    
+    let parallaxController = ParallaxController()
+    
     override func didMove(to view: SKView){
         backgroundColor = SKColor.black
+        
+        for parallaxSprite in parallaxController.getAllSprites() {
+            addChild(parallaxSprite)
+        }
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        guard let lastUpdateTime = lastUpdateTime else {
+            self.lastUpdateTime = currentTime
+            return
+        }
+        // Calculate deltaTime
+        let deltaTime = currentTime - lastUpdateTime
+        self.lastUpdateTime = currentTime
+        
+        parallaxController.update(deltaTime)
     }
 }

@@ -13,6 +13,7 @@ import SpriteKit
 
 enum Type: Int {
     case rock
+    case stick
     
     case log  // Always leave last
     static var count: Int {return Type.log.hashValue + 1}
