@@ -15,11 +15,13 @@ public struct GlobalValues {
     static var centreOfScreen = CGPoint(x: 1024, y: 768)
     
     // OBSTACLES
-    static let numOfObstacles = 5               // Total number of obstacles
-    static let avgSpaceBetweenObstacles = 50    // The average space between the obstacles on the x axis
-    static let obstacleMaxPosRandomize = 30     // The maximum amount allowed for randomizing obstacles - obstacles wont move more than obstacleMaxPosRandomize away from avgSpaceBetweenObstacles
+    static let numOfObstacles = 7               // Total number of obstacles
+    static let avgSpaceBetweenObstacles = 1500    // The average space between the obstacles on the x axis
+    static let obstacleMaxPosRandomize = 1500     // The maximum amount allowed for randomizing obstacles - obstacles wont move more than obstacleMaxPosRandomize away from avgSpaceBetweenObstacles
+    static let obstaclePositionY = 380         // The y position of the obstacles - should be where the foreground's ground is
     
     static let rockImageName = "Rock"
+    static let stickImageName = "Stick"
     static let logImageName = "Log"
     
     

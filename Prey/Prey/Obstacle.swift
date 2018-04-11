@@ -38,10 +38,12 @@ class Obstacle : GameObject, ObstacleBase {
         switch obstacleType {
         case Type.rock:
             self.init(imageNamed: GlobalValues.rockImageName)
+        case Type.stick:
+            self.init(imageNamed: GlobalValues.stickImageName)
         case Type.log:
             self.init(imageNamed: GlobalValues.logImageName)
         default:
-            print("Invalid obstacleType, automatically set the obstacle as rock")
+            print("Invalid obstacleType OR type not in switch in Obstacle.swift, automatically set the obstacle as rock")
             self.init(imageNamed: "Rock")
         }
         position = pos
