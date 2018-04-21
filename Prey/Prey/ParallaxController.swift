@@ -37,7 +37,6 @@ class ParallaxController {
     //
     // - Parameter deltaTime: the amount of time between each frame
     func update(_ deltaTime: TimeInterval){
-        // Update all sprites
         var i = 0
         while(i < parallaxSprites.count){
             // Loop sprite when needed

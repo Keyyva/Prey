@@ -46,7 +46,25 @@ class ObstacleFactory {
     //
     // - Parameter deltaTime: the amount of time between each frame
     func update(_ deltaTime: TimeInterval){
-        // TODO: loop obstacles when they leave the left side of the screen
+        var i = 0
+        while(i < obstacles.count){
+            // Loop obstacles when needed
+            if(obstacles[i].position.x + (obstacles[i].size.width/2) < 0){
+                let obstaclePosRand = CGFloat(arc4random_uniform(UInt32(GlobalValues.obstacleMaxPosRandomize)))
+                
+                // Obstacles[i-1] is the obstacle that is furthest right on the screen,
+                //      go to that obstacle and position yourself accordingly
+                if(i == 0){
+                    obstacles[i].position.x = obstacles[obstacles.count-1].position.x
+                                + CGFloat(GlobalValues.avgSpaceBetweenObstacles) + obstaclePosRand
+                }
+                else{
+                    obstacles[i].position.x = obstacles[i-1].position.x
+                        + CGFloat(GlobalValues.avgSpaceBetweenObstacles) + obstaclePosRand
+                }
+            }
+            i += 1
+        }
         
         // Update all obstacles
         for obstacle in obstacles{
