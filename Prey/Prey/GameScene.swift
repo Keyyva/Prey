@@ -13,6 +13,7 @@ class GameScene: SKScene {
     
     let parallaxController = ParallaxController()
     let obstacleFactory = ObstacleFactory()
+    let player = Player(imageNamed: GlobalValues.bunnyJump_ImageName)
     
     override func didMove(to view: SKView){
         backgroundColor = SKColor.black
@@ -23,6 +24,8 @@ class GameScene: SKScene {
         for obstacle in obstacleFactory.getAllObstacles() {
             addChild(obstacle)
         }
+        addChild(player)
+        player.position = GlobalValues.bunnyStartPosition
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -36,5 +39,6 @@ class GameScene: SKScene {
         
         parallaxController.update(deltaTime)
         obstacleFactory.update(deltaTime)
+        player.update(deltaTime)
     }
 }

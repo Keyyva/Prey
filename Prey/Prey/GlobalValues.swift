@@ -36,5 +36,19 @@ public struct GlobalValues {
     
     static let backgroundStartVelocity: [CGFloat] = [-100.0, 0.0]  // Starting velocity value
     static let midgroundStartVelocity: [CGFloat] = [-300.0, 0.0]   // [xVelocity, yVelocity]
-    static let foregroundStartVelocity: [CGFloat] = [-500.0, 0.0]  // [xVelocity, yVelocity]
+    static let foregroundStartVelocity: [CGFloat] = [-600.0, 0.0]  // [xVelocity, yVelocity]
+    
+    
+    // BUNNY
+    static let bunnyStartPosition = CGPoint(x: 200, y: 480)
+    static let bunnyJump_ImageName = "Bunny_Jump"
+    static let bunnyRun1_ImageName = "Bunny_Run1"
+    static let bunnyRun2_ImageName = "Bunny_Run2"
+    static let bunnyRun3_ImageName = "Bunny_Run3"
+    static let bunnyRun4_ImageName = "Bunny_Run4"
+    static let bunnyRun5_ImageName = "Bunny_Run5"
+    static let bunnyRun6_ImageName = "Bunny_Run6"
+    
+    static let bunnyTimePerFrame = 0.1
+    static let bunnyDefaultTexture = GlobalValues.bunnyRun1_ImageName
 }
