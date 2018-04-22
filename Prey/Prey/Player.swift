@@ -49,7 +49,7 @@ class Player: GameObject {
         isJumping = false
         isRunning = false   // Must start as false so run function will be called at start time
         
-        state = State.jump
+        state = State.run
         // Animation variables
         runAnimation = SKAction.animate(with: runTextures, timePerFrame: GlobalValues.bunnyTimePerFrame)
         runAnimationLoop = SKAction.repeatForever(runAnimation)
