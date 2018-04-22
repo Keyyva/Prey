@@ -14,6 +14,7 @@
 		FF22569E20789D0D001D9850 /* ParallaxSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22569D20789D0D001D9850 /* ParallaxSprite.swift */; };
 		FF2256A020789D20001D9850 /* ParallaxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF22569F20789D20001D9850 /* ParallaxController.swift */; };
 		FF2256A22078AAAA001D9850 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2256A12078AAAA001D9850 /* Player.swift */; };
+		FF3904F2208D34AE00A3977C /* CollisionDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3904F1208D34AE00A3977C /* CollisionDetector.swift */; };
 		FF961AB920771E05005653C4 /* GlobalValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF961AB820771E05005653C4 /* GlobalValues.swift */; };
 		FFA4ADD1207566C300AB5A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */; };
 		FFA4ADD7207566C300AB5A13 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4ADD6207566C300AB5A13 /* GameScene.swift */; };
@@ -50,6 +51,7 @@
 		FF22569D20789D0D001D9850 /* ParallaxSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxSprite.swift; sourceTree = "<group>"; };
 		FF22569F20789D20001D9850 /* ParallaxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxController.swift; sourceTree = "<group>"; };
 		FF2256A12078AAAA001D9850 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FF3904F1208D34AE00A3977C /* CollisionDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionDetector.swift; sourceTree = "<group>"; };
 		FF961AB820771E05005653C4 /* GlobalValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalValues.swift; sourceTree = "<group>"; };
 		FFA4ADCD207566C300AB5A13 /* Prey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA4ADD0207566C300AB5A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				FF22569D20789D0D001D9850 /* ParallaxSprite.swift */,
 				FF22569F20789D20001D9850 /* ParallaxController.swift */,
 				FF2256A12078AAAA001D9850 /* Player.swift */,
+				FF3904F1208D34AE00A3977C /* CollisionDetector.swift */,
 			);
 			path = Prey;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3904F2208D34AE00A3977C /* CollisionDetector.swift in Sources */,
 				FF2256A22078AAAA001D9850 /* Player.swift in Sources */,
 				FF22569A207898D1001D9850 /* Obstacle.swift in Sources */,
 				FF08411920765BB3007F87DE /* GameObject.swift in Sources */,

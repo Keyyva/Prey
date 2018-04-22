@@ -29,7 +29,7 @@ class Player: GameObject {
     let runTextures = [SKTexture(imageNamed: GlobalValues.bunnyRun1_ImageName), SKTexture(imageNamed: GlobalValues.bunnyRun2_ImageName),
                        SKTexture(imageNamed: GlobalValues.bunnyRun3_ImageName), SKTexture(imageNamed: GlobalValues.bunnyRun4_ImageName),
                        SKTexture(imageNamed: GlobalValues.bunnyRun5_ImageName), SKTexture(imageNamed: GlobalValues.bunnyRun6_ImageName)]
-    let jumpTextures = [SKTexture(imageNamed: GlobalValues.bunnyJump_ImageName)]
+    let jumpTextures = [SKTexture(imageNamed: GlobalValues.bunnyJump1_ImageName), SKTexture(imageNamed: GlobalValues.bunnyJump2_ImageName)]
     
     // Animation actions
     let runAnimation: SKAction

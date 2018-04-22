@@ -12,8 +12,7 @@ class GameScene: SKScene {
     fileprivate var lastUpdateTime: TimeInterval?
     
     let parallaxController = ParallaxController()
-    let obstacleFactory = ObstacleFactory()
-    let player = Player(imageNamed: GlobalValues.bunnyDefaultTexture)
+    let collisionDetector = CollisionDetector()
     
     override func didMove(to view: SKView){
         backgroundColor = SKColor.black
@@ -21,11 +20,9 @@ class GameScene: SKScene {
         for parallaxSprite in parallaxController.getAllSprites() {
             addChild(parallaxSprite)
         }
-        for obstacle in obstacleFactory.getAllObstacles() {
-            addChild(obstacle)
+        for object in collisionDetector.getAllObjects(){
+            addChild(object)
         }
-        addChild(player)
-        player.position = GlobalValues.bunnyStartPosition
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -38,11 +35,10 @@ class GameScene: SKScene {
         self.lastUpdateTime = currentTime
         
         parallaxController.update(deltaTime)
-        obstacleFactory.update(deltaTime)
-        player.update(deltaTime)
+        collisionDetector.update(deltaTime)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        player.state = State.jump
+        collisionDetector.playerJump()
     }
 }

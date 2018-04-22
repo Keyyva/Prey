@@ -41,7 +41,8 @@ public struct GlobalValues {
     
     // BUNNY
     static let bunnyStartPosition = CGPoint(x: 200, y: 480)
-    static let bunnyJump_ImageName = "Bunny_Jump"
+    static let bunnyJump1_ImageName = "Bunny_Jump1"
+    static let bunnyJump2_ImageName = "Bunny_Jump2"
     static let bunnyRun1_ImageName = "Bunny_Run1"
     static let bunnyRun2_ImageName = "Bunny_Run2"
     static let bunnyRun3_ImageName = "Bunny_Run3"
