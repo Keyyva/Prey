@@ -12,15 +12,27 @@ class GameScene: SKScene {
     fileprivate var lastUpdateTime: TimeInterval?
     var gameState = GameState.mainMenu
     
+    let scoreLabel = SKLabelNode(fontNamed: "ArialMT")
+    
     let gameManager = GameManager()
     
     override func didMove(to view: SKView){
         backgroundColor = SKColor.black
         
+        // Setting the score label attributes
+        scoreLabel.text = String(GlobalValues.score)
+        scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.right
+        scoreLabel.fontSize = 70
+        scoreLabel.fontColor = UIColor.white
+        scoreLabel.position = CGPoint(x: 2000, y: 1250)
+        scoreLabel.zPosition = 1000
+        
         // Add all objects as children
         for object in gameManager.getAllObjects(){
             addChild(object)
         }
+        
+        addChild(scoreLabel)
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -33,6 +45,7 @@ class GameScene: SKScene {
         self.lastUpdateTime = currentTime
         
         gameManager.update(deltaTime)
+        scoreLabel.text = String(GlobalValues.score)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

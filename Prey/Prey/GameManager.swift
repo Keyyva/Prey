@@ -72,6 +72,7 @@ class GameManager {
             gameOver.isHidden = true
             mainMenu.resetPosition()
             collisionDetector.obstacleFactory.resetObstacles()
+            GlobalValues.score = 0
             
         default:
             print("Invalid game state! Setting the gameState to main menu.")

@@ -20,6 +20,7 @@ enum GameState: String {
 
 public struct GlobalValues {
     static var centreOfScreen = CGPoint(x: 1024, y: 768)
+    static var score = 0
     
     // OBSTACLES
     static let numOfObstacles = 5               // Total number of obstacles

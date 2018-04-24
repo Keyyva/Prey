@@ -49,6 +49,7 @@ class ObstacleFactory {
         while(i < obstacles.count){
             // Loop obstacles when needed
             if(obstacles[i].position.x + (obstacles[i].size.width/2) < 0){
+                GlobalValues.score += 1
                 let obstaclePosRand = CGFloat(arc4random_uniform(UInt32(GlobalValues.obstacleMaxPosRandomize)))
                 
                 // Obstacles[i-1] is the obstacle that is furthest right on the screen,
