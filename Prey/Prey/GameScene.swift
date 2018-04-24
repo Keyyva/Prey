@@ -10,17 +10,15 @@ import SpriteKit
 
 class GameScene: SKScene {
     fileprivate var lastUpdateTime: TimeInterval?
+    var gameState = GameState.mainMenu
     
-    let parallaxController = ParallaxController()
-    let collisionDetector = CollisionDetector()
+    let gameManager = GameManager()
     
     override func didMove(to view: SKView){
         backgroundColor = SKColor.black
         
-        for parallaxSprite in parallaxController.getAllSprites() {
-            addChild(parallaxSprite)
-        }
-        for object in collisionDetector.getAllObjects(){
+        // Add all objects as children
+        for object in gameManager.getAllObjects(){
             addChild(object)
         }
     }
@@ -34,11 +32,10 @@ class GameScene: SKScene {
         let deltaTime = currentTime - lastUpdateTime
         self.lastUpdateTime = currentTime
         
-        parallaxController.update(deltaTime)
-        collisionDetector.update(deltaTime)
+        gameManager.update(deltaTime)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        collisionDetector.playerJump()
+        gameManager.touch()
     }
 }

@@ -28,7 +28,6 @@ class CollisionDetector{
     func update(_ deltaTime: TimeInterval){
         obstacleFactory.update(deltaTime)
         player.update(deltaTime)
-        detectCollision()
     }
     
     // Checks for collision between the player and obstacles
@@ -37,13 +36,14 @@ class CollisionDetector{
         // Loop through all obstacles to test if player is touching one
         for obstacle in obstacleFactory.getAllObstacles() {
             if(sqrt((obstacle.position.x - player.position.x) * (obstacle.position.x - player.position.x) + (obstacle.position.y - obstacle.size.height/2 - player.position.y - obstacle.size.height/2) * (obstacle.position.y - obstacle.size.height/2 - player.position.y - player.size.height/2)) < (player.size.width/2 + obstacle.size.width/2)){
-                print("Collision")
+                // COLLISION!
+                return true
             }
         }
         return false
     }
     
-    // Returns all objects (obstacles and player) as an array - is used for addChild() in GameScene
+    // Returns all objects (obstacles and player) as an array
     //
     public func getAllObjects()->Array<GameObject> {
         var objects = obstacleFactory.getAllObstacles()

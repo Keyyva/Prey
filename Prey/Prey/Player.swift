@@ -14,6 +14,7 @@ import SpriteKit
 enum State {
     case run
     case jump
+    case dead
 }
 
 class Player: GameObject {
@@ -73,9 +74,13 @@ class Player: GameObject {
         // Calls the func that corresponds with the current state
         switch state {
         case State.run:
+            isPaused = false // Temp till I have a dead frame
             run()
         case State.jump:
             jump(deltaTime)
+        case State.dead:
+            // TODO: DEAD FRAME HERE!
+            isPaused = true // Temp till I have a dead frame
         default:
             print("Invalid state")
             state = State.run
@@ -121,5 +126,14 @@ class Player: GameObject {
         velocityY += gravityY * 15 * CGFloat(deltaTime)          // Apply gravity
         position.y += velocityY * 15 * CGFloat(deltaTime)        // Find position from velocity
         forceY = 0
+    }
+    
+    // Setters for the state of the player
+    //
+    func setDead(){
+        state = State.dead
+    }
+    func setRun(){
+        state = State.run
     }
 }

@@ -16,7 +16,7 @@ class ParallaxSprite : GameObject {
     
     // Initialize and set the sprite image
     //
-    // - Parameter imagenamed: the name of the image for the sprite
+    // - Parameter imageNamed: the name of the image for the sprite
     required init(imageNamed: String) {
         velocity = [0, 0]
         super.init(imageNamed: imageNamed)
@@ -32,7 +32,7 @@ class ParallaxSprite : GameObject {
     //      pos: the starting position of the sprite
     //      velX: starting X velocity of the ParallaxSprite
     //      velY: starting y velocity of the ParallaxSprite
-    convenience init(imageNamed: String, pos: CGPoint, velX: CGFloat, velY: CGFloat){
+    convenience init(imageNamed: String, pos: CGPoint, velX: CGFloat = 0, velY: CGFloat = 0){
         self.init(imageNamed: imageNamed)
         position = pos
         velocity = [velX, velY]

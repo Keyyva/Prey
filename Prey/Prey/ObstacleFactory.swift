@@ -19,9 +19,8 @@ class ObstacleFactory {
         var i = 0
         while(i < GlobalValues.numOfObstacles){
             let temp = Type(rawValue: Int(arc4random_uniform(UInt32(Type.count))))
-            //let obstaclePosRand = Int(arc4random_uniform(UInt32(GlobalValues.obstacleMaxPosRandomize * 2)) - UInt32(GlobalValues.obstacleMaxPosRandomize))  // Random position between -GlobalValues.obstacleMaxPosRandomize and GlobalValues.obstacleMaxPosRandomize
             let obstaclePosRand = Int(arc4random_uniform(UInt32(GlobalValues.obstacleMaxPosRandomize)))
-            obstacles.append(Obstacle.init(obstacleType: temp!, pos: CGPoint(x: 2000 + ((GlobalValues.avgSpaceBetweenObstacles * i) + obstaclePosRand), y: GlobalValues.obstaclePositionY), velX: GlobalValues.foregroundStartVelocity[0], velY: 0))
+            obstacles.append(Obstacle.init(obstacleType: temp!, pos: CGPoint(x: 3000 + ((GlobalValues.avgSpaceBetweenObstacles * i) + obstaclePosRand), y: GlobalValues.obstaclePositionY), velX: GlobalValues.foregroundStartVelocity[0], velY: 0))
             i += 1
         }
     }
@@ -76,5 +75,13 @@ class ObstacleFactory {
     //
     public func getAllObstacles()->Array<GameObject> {
         return obstacles
+    }
+    
+    // Resets all obstacles to outside of the right edge of the screen
+    //
+    public func resetObstacles(){
+        for obstacle in obstacles{
+            obstacle.position.x += (GlobalValues.centreOfScreen.x * 2) + 500
+        }
     }
 }

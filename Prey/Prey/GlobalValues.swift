@@ -11,6 +11,13 @@
 import Foundation
 import SpriteKit
 
+// The current state the game is in - show main menu or play game
+enum GameState: String {
+    case mainMenu
+    case playing
+    case gameOver
+}
+
 public struct GlobalValues {
     static var centreOfScreen = CGPoint(x: 1024, y: 768)
     
@@ -34,9 +41,9 @@ public struct GlobalValues {
     static let midgroundStartPos = centreOfScreen
     static let foregroundStartPos = centreOfScreen
     
-    static let backgroundStartVelocity: [CGFloat] = [-100.0, 0.0]  // Starting velocity value
-    static let midgroundStartVelocity: [CGFloat] = [-300.0, 0.0]   // [xVelocity, yVelocity]
-    static let foregroundStartVelocity: [CGFloat] = [-600.0, 0.0]  // [xVelocity, yVelocity]
+    static let backgroundStartVelocity: [CGFloat] = [-150.0, 0.0]  // Starting velocity value
+    static let midgroundStartVelocity: [CGFloat] = [-350.0, 0.0]   // [xVelocity, yVelocity]
+    static let foregroundStartVelocity: [CGFloat] = [-650.0, 0.0]  // [xVelocity, yVelocity]
     
     
     // BUNNY
@@ -52,4 +59,10 @@ public struct GlobalValues {
     
     static let bunnyTimePerFrame = 0.1
     static let bunnyDefaultTexture = GlobalValues.bunnyRun1_ImageName
+    
+    // MENUS
+    static let mainMenuImageName = "MainMenu"
+    static let gameOverImageName = "GameOver"
+    static let mainMenuStartPos = CGPoint(x: 1400, y: 1000)
+    static let gameOverStartPos = CGPoint(x: 1000, y: 800 )
 }
