@@ -23,8 +23,8 @@ public struct GlobalValues {
     static var score = 0
     
     // OBSTACLES
-    static let numOfObstacles = 5               // Total number of obstacles
-    static let avgSpaceBetweenObstacles = 1500    // The average space between the obstacles on the x axis
+    static let numOfObstacles = 20               // Total number of obstacles
+    static let avgSpaceBetweenObstacles = 1600    // The average space between the obstacles on the x axis
     static let obstacleMaxPosRandomize = 1000     // The maximum amount allowed for randomizing obstacles - obstacles wont move more than obstacleMaxPosRandomize away from avgSpaceBetweenObstacles
     static let obstaclePositionY = 380         // The y position of the obstacles - should be where the foreground's ground is
     
@@ -64,6 +64,12 @@ public struct GlobalValues {
     // MENUS
     static let mainMenuImageName = "MainMenu"
     static let gameOverImageName = "GameOver"
-    static let mainMenuStartPos = CGPoint(x: 1400, y: 1000)
+    static let mainMenuStartPos = CGPoint(x: 1500, y: 1000)
     static let gameOverStartPos = CGPoint(x: 1000, y: 800 )
+    
+    // AUDIO
+    static let gameMusicName = "PreyMusic"
+    static let gameOverSoundName = "GameOverSoundEffect"
+    static let gameMusicExt = ".wav"
+    static let gameOverSoundExt = ".wav"
 }

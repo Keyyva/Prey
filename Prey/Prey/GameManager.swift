@@ -9,6 +9,7 @@
 
 import Foundation
 import SpriteKit
+import AVFoundation
 
 class GameManager {
     var gameState = GameState.mainMenu
@@ -18,9 +19,28 @@ class GameManager {
     let collisionDetector = CollisionDetector()
     let gameOver = GameObject(imageNamed: GlobalValues.gameOverImageName)
     
+    // Audio component and file path
+    var gameMusic = AVAudioPlayer()
+    let gameMusicPath = Bundle.main.path(forResource: GlobalValues.gameMusicName, ofType: GlobalValues.gameMusicExt)
+    var gameOverSoundEffect = AVAudioPlayer()
+    let gameOverSoundEffectPath = Bundle.main.path(forResource: GlobalValues.gameOverSoundName, ofType: GlobalValues.gameOverSoundExt)
+    
     init() {
         gameOver.position = GlobalValues.gameOverStartPos
         gameOver.isHidden = true
+        
+        // Init the audio
+        do{
+            try gameMusic = AVAudioPlayer(contentsOf: URL(fileURLWithPath: gameMusicPath!))
+        } catch {
+            print("GAME MUSIC CANNOT BE FOUND")
+        }
+        do{
+            try gameOverSoundEffect = AVAudioPlayer(contentsOf: URL(fileURLWithPath: gameOverSoundEffectPath!))
+        } catch {
+            print("GAME OVER SOUND EFFECT CANNOT BE FOUND")
+        }
+        gameMusic.numberOfLoops = -1
     }
     
     // Update - runs once every frame
@@ -41,6 +61,8 @@ class GameManager {
             if(collisionDetector.detectCollision()){
                 gameState = GameState.gameOver
                 gameOver.isHidden = false
+                gameMusic.pause()
+                gameOverSoundEffect.play()
             }
             
         case GameState.gameOver:
@@ -61,6 +83,8 @@ class GameManager {
             gameState = GameState.playing
             gameOver.isHidden = true
             mainMenu.startMoving()
+            gameMusic.currentTime = 0
+            gameMusic.play()
             
         case GameState.playing:
             collisionDetector.playerJump()
